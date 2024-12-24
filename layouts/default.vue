@@ -12,13 +12,13 @@
                 <div class="w-[1px] h-full bg-blue-4"></div>
                 <div class="w-[7px] h-[1px] bg-blue-4"></div>
             </div>
-            <div class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
+            <div @click="downloadPDF()" class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
                 <icon name="solar:download-minimalistic-bold" class="text-2xl"/>
                 <p class="text-[16px] body-one">Resume</p>
             </div>
             <pointer class="absolute -left-[9px]" :class="[tabNum == 0 ? 'top-[120px] transition-all duration-700 ease-in-out' : '', tabNum == 1 ? 'top-[224px] transition-all duration-700 ease-in-out' : '', tabNum == 2 ? 'top-[328px] transition-all duration-700 ease-in-out' : '']"/>
             <div class="absolute -left-[9px] bottom-[128px]">
-                <social v-for="social in socials" :key="social.iconName" :IconName="social.iconName" />
+                <social v-for="social in socials" :key="social.iconName" :IconName="social.iconName" :SocialLink="social.link" />
             </div>
             <div v-for="button in buttons" :key="button.Title">
                 <div v-if="button.path == currentpath" class="flex flex-col gap-[80px] mr-[72px]">
@@ -56,19 +56,24 @@ const buttons = [
 ]
 const socials = [
     {
-        iconName: "cib:gmail"
+        iconName: "cib:gmail",
+        link: "https://t.me/Joel0483"
     },
     {
-        iconName: "simple-icons:telegram"
+        iconName: "simple-icons:telegram",
+        link: "https://t.me/Joel0483"
     },
     {
-        iconName: "cib:linkedin-in"
+        iconName: "cib:linkedin-in",
+        link: "https://t.me/Joel0483"
     },
     {
-        iconName: "simple-icons:github"
+        iconName: "simple-icons:github",
+        link: "https://t.me/Joel0483"
     },
     {
-        iconName: "simple-icons:instagram"
+        iconName: "simple-icons:instagram",
+        link: "https://t.me/Joel0483"
     }
 ]
 
@@ -83,6 +88,13 @@ const updateTab = () => {
       }
     }
   }
+};
+const downloadPDF = () => {
+  const pdfUrl = '/documents/My_Resume_V3.pdf'; // Path relative to the public folder
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.download = 'Eyuel_Mulugeta.pdf'; // Name for the downloaded file
+  link.click();
 };
 
 // Watch for route changes and update the current path
