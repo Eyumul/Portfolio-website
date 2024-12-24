@@ -15,7 +15,19 @@ export default {
           headerFont: ['Poppins'],
           bodyFont: ['Source Sans 3']
         },
+        fontSize: {
+          'h1': '48px',
+          'h2': '36px',
+          'h3': '20px',
+          'b1': '18px',
+          'b2': '16px',
+          'b3': '14px',
+          'b4': '12px'
+        },
         colors: {
+          silver: {
+            '70' : '#B2B2B2'
+          },
           green: {
             '1' : '#A9BE97',
             '2' : '#7FE932',
@@ -28,6 +40,10 @@ export default {
             '3' : '#0092CF',
             '4' : '#084F6F'           
           }
+        },
+        dropShadow: {
+          'lg': '0 2px 3px rgba(127, 233, 50, 0.5)',
+          'xl': '10px 10px 6px rgba(127, 233, 50, 0.3)',
         }
       },
     },
