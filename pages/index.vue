@@ -51,6 +51,7 @@
 </template>
 
 <script setup>
+// import neccessary images
 import hackatomImgPath from '~/assets/images/hackatom.jpg';
 import strideImgPath from '~/assets/images/StrideAwardCertificate.png';
 import hultImgPath from '~/assets/images/hultprize.jpg';
