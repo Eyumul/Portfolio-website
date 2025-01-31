@@ -1,5 +1,5 @@
 <template>
-    <div class="flex px-[16px] py-[4px] bg-blue-4 rounded-[6px] text-silver-70 text-[16px] body-one">
+    <div class="flex px-[16px] py-[4px] bg-blue-4 rounded-[6px] text-silver-70 text-[14px] xl:text-[16px] body-one">
         {{ identifier }}
     </div>
 </template>
