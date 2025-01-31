@@ -52,9 +52,9 @@
 
 <script setup>
 // import neccessary images
-import hackatomImgPath from '~/assets/images/hackatom.jpg';
+import hackatomImgPath from '~/assets/images/hackatom_award.jpg';
 import strideImgPath from '~/assets/images/StrideAwardCertificate.png';
-import hultImgPath from '~/assets/images/hultprize.jpg';
+import hultImgPath from '~/assets/images/hultprize_award.jpg';
 const childRef = ref(null)
 const currentPageInParent = ref(0)
 watch(() => childRef.value?.currentPage, (newVal) => {
