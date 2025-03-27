@@ -2,7 +2,12 @@
     <div>
         <div v-if="tab == 'About me'" class="flex flex-col md:flex-row items-center gap-[48px] mt-[48px] md:mt-[120px] mx-[24px] md:mr-[0px] md:ml-[48px]">
             <div class="flex justify-center items-start">
-                <img src="../assets/images/Taylan-JohnsonJPG (1).png" class="md:max-w-[620px] md:w-full w-[150px] rounded-full md:rounded-none h-auto" alt="profile_pic"/>
+                <img src="../assets/images/my_profile_pic.jpg" 
+                    class="md:[mask-image:radial-gradient(circle,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_100%)] 
+                        md:[-webkit-mask-image:radial-gradient(circle,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_100%)] 
+                        md:max-w-[620px] md:w-full w-[150px] h-auto rounded-full md:rounded-none"
+                    alt="profile_pic"
+                />
             </div>
             <div class="flex flex-col p-6 pt-0 bg-blue-5 rounded-[10px] max-w-[859px] w-[100%] gap-4 h-[480px] md:h-[600px] overflow-y-auto">
                 <div class="flex flex-col pt-6 gap-4 sticky top-0 bg-blue-5 pb-4">
