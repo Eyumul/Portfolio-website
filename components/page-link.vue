@@ -1,5 +1,5 @@
 <template>
-    <div @click="$router.push(buttonPath)" class="flex hover:text-green-2 transition-colors duration-500 ease-in-out cursor-pointer gap-[24px] items-center">
+    <div @click="$router.push(buttonPath)" class="flex hover:text-green-2 transition-colors duration-500 ease-in-out cursor-custom-pointer gap-[24px] items-center">
         <Icon :name="buttonIcon" class="size-[24px]"/>
         <p class="text-h3 header-three">{{ buttonTitle }}</p>
     </div>

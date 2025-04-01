@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .cursor-custom {
+      cursor: url('~/assets/images/default-cursor.png'), auto;
+    }
+    
+    /* If you need different states */
+    .cursor-custom-pointer {
+      cursor: url('~/assets/images/pointer-cursor.png'), pointer;
+    }
+  }
