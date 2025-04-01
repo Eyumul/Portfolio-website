@@ -5,7 +5,7 @@
                 <Pagination ref="childRef" :iteratingData="filteredProjects"/>
             </div>
             <div class="w-full flex flex-col gap-[64px] mx-[24px] md:mx-[80px] lg:mr-0 justify-center items-center">
-                <ProjectSection v-for="project in filteredProjects.slice(currentPageInParent, currentPageInParent+1)" :key="project.title" :projectTitle="project.title" :projectImage="project.image" :projectDescription="project.description" :techStacks="project.techStack"/>
+                <ProjectSection v-for="project in filteredProjects.slice(currentPageInParent, currentPageInParent+1)" :key="project.title" :projectTitle="project.title" :projectLink="project.link" :projectImage="project.image" :projectDescription="project.description" :techStacks="project.techStack"/>
             </div>
         </div>
     </div>
@@ -35,6 +35,7 @@ const projects = [
     {
         title: 'HaHu Jobs - Web app',
         image: hahuJobsAdminConsoleImgPath,
+        link: 'https://staging.admin.hahujobs.io/app',
         type: 'Industrial',
         description: 'I have participated in building of this web app alongside with other developers. The application is used by the admins for hahujobs owners to control the hahu.jobs site.',
         techStack: ["Nuxt.js", "Nuxt UI", "Tailwind CSS", "Hasura", "PostgreSQL", "GoLang"]
@@ -42,6 +43,7 @@ const projects = [
     {
         title: 'Balesuq - mobile app',
         image: balesuqImgPath,
+        link: 'https://www.figma.com/proto/7pxNcgVY1ZVWSusbP2PtGQ/Balesuq?node-id=264-694&p=f&t=4szR2u7KPUtOUJKi-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A961',
         type: 'Personal',
         description: 'Balesuq is a dynamic eCommerce platform designed for seamless buying and selling. Users can list products for sale or post purchase requests, making it easier to find what they need. With an intuitive interface, secure transactions, and smart search features, Balesuq simplifies online shopping. Experience a smooth and efficient marketplace tailored for buyers and sellers alike.',
         techStack: ["Flutter", "Hasura", "PostgreSQL", "GoLang"]
@@ -56,6 +58,7 @@ const projects = [
     {
         title: 'HaHuJobs Bot - Design',
         image: hahuJobsBotImgPath,
+        link: 'https://www.figma.com/proto/7YgTYjHoFPkHkSCqW7Yh8J/HaHuJobs-Bot?node-id=92-457&p=f&t=eRWbGbAS4qsA7LIV-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=82%3A1561&show-proto-sidebar=1',
         type: 'Industrial',
         description: 'During my time at HahuJobs as a UI/UX Designer, I crafted an intuitive and user-friendly interface for the HahuJobs Telegram bot, enhancing the job search and application experience. The design prioritized clarity, accessibility, and efficiency, ensuring seamless navigation and including dark theme for job seekers to browse listings, track applications, and interact with employers—all within Telegram. By focusing on minimalist design, structured user flow, and optimized interactions, I helped create a smooth and engaging experience tailored for both job seekers and recruiters.',
         techStack: ["Figma"]
@@ -63,6 +66,7 @@ const projects = [
     {
         title: 'Felega Design - Web app',
         image: felegaImgPath,
+        link: 'https://www.figma.com/proto/oOxiDJHku9bZEiKT2fkL8F/felega?node-id=196-1623&p=f&t=yY5ILnPHF6ezjdGM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=196%3A1623',
         type: 'Personal',
         description: ' An innovative tourism platform designed to enhance travel experiences. It allows users to post and discover unique locations (checkpoints) and connect them through engaging stories to create customized vacation itineraries (quests). With a focus on exploration and storytelling, Felega aims to make tourism more interactive, enjoyable, and community-driven.',
         techStack: ["Figma"]
