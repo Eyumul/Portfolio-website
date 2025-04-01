@@ -30,7 +30,7 @@
                 <button @click="collapsed = !collapsed" :class="collapsed ? '' : 'invisible'">
                     <Icon name="solar:hamburger-menu-linear" class="text-4xl text-silver-70 hover:text-green-2"/>
                 </button>
-                <a href="/documents/My_Resume_V3.pdf" target="_blank" class="flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
+                <a href="/documents/My_Resume_V3.pdf" target="_blank" class="flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
                     <icon name="solar:document-text-linear" class="text-lg xl:text-xl"/>
                     <p class="text-[14px] xl:text-[16px] body-one">Resume</p>
                 </a>
@@ -39,7 +39,7 @@
                 <slot/>
             </div>
         </div>
-        <div class="hidden lg:flex bg-black text-white h-screen justify-between gap-[24px] xl:gap-[48px]">
+        <div class="hidden lg:flex bg-black cursor-custom text-white h-screen justify-between gap-[24px] xl:gap-[48px]">
             <div class="flex flex-col w-full">
                 <div class="flex hover:scale-110 duration-500 hover:text-green-2 absolute left-[48px] top-[48px] items-center text-blue-1 gap-4">
                     <p class="text-b4 italic">A little bit of design, a little bit of code, all me.</p>
@@ -56,7 +56,7 @@
                     <div class="w-[1px] h-full bg-blue-4"></div>
                     <div class="w-[7px] h-[1px] bg-blue-4"></div>
                 </div>
-                <a href="/documents/My_Resume_V3.pdf" target="_blank" class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
+                <a href="/documents/My_Resume_V3.pdf" target="_blank" class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
                     <icon name="solar:document-text-linear" class="text-lg xl:text-xl"/>
                     <p class="text-[14px] xl:text-[16px] body-one">Resume</p>
                 </a>
@@ -66,7 +66,7 @@
                 </div>
                 <div v-for="button in buttons" :key="button.Title">
                     <div v-if="button.path == currentpath" class="flex flex-col gap-[80px] mr-[24px] xl:mr-[72px]">
-                        <button @click="tab = menu; updateTab()" v-for="menu in button.menu" :key="menu" class="text-start hover:text-green-2 cursor-pointer text-b3 xl:text-b2 transition-colors duration-500 ease-in-out body-two" :class="[menu == tab ? 'text-green-2' : 'text-silver-70']">{{ menu }}</button>
+                        <button @click="tab = menu; updateTab()" v-for="menu in button.menu" :key="menu" class="text-start hover:text-green-2 cursor-custom-pointer text-b3 xl:text-b2 transition-colors duration-500 ease-in-out body-two" :class="[menu == tab ? 'text-green-2' : 'text-silver-70']">{{ menu }}</button>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@ const buttons = [
         iconName: "ph:folders",
         Title: "Projects",
         path: "/projects",
-        menu: ["Personal", "Client", "Industrial"]
+        menu: ["Industrial", "Personal", "Client"]
     },
     {
         iconName: "ph:briefcase",
@@ -175,5 +175,4 @@ watch(
 ::-webkit-scrollbar-thumb {
     @apply bg-green-2 rounded-full
 }
-
 </style>
