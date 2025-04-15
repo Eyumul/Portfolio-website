@@ -1,1 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+/* Poppins Regular 400 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('@/assets/fonts/Poppins/Poppins-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Poppins Bold 700 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('@/assets/fonts/Poppins/Poppins-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Source Sans 3 Regular */
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('@/assets/fonts/SourceSans3/SourceSans3-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Source Sans 3 Italic */
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('@/assets/fonts/SourceSans3/SourceSans3-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}

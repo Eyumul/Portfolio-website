@@ -150,18 +150,18 @@ watch(
 
 <style>
 .header-one {
-    @apply font-headerFont;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
 .header-three {
-    @apply font-headerFont;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 .body-one {
-    font-family: "Source Sans 3", serif;
+    font-family: "Source Sans 3", sans-serif;
 }
 .body-two {
-    font-family: "Source Sans 3", serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: bold;
 }
 
