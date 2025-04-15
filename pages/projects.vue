@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col justify-center lg:justify-start lg:mt-[120px] h-[calc(100vh-120px)] ml-0 md:ml-[48px]">
+    <div class="flex flex-col justify-center lg:justify-start lg:mt-[120px] h-[calc(100vh-120px)] md:h-fit ml-0 md:ml-[48px]">
         <div class="flex h-fit pl-0 md:pl-[48px] 2xl:pl-[80px] justify-center md:justify-between items-center">
-            <div class="absolute bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
+            <div class="absolute z-30 w-full md:w-fit bg-black md:bg-transparent justify-center pt-8 bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
                 <Pagination ref="childRef" :iteratingData="filteredProjects"/>
             </div>
             <div class="w-full flex flex-col gap-[64px] mx-[24px] md:mx-[80px] lg:mr-0 justify-center items-center">
@@ -13,11 +13,12 @@
 
 <script setup>
 import felegaImgPath from '~/assets/images/Screenshot 2024-07-24 113307.png';
-import nuxtTemplateImgPath from '~/assets/images/Screenshot 2025-02-12 191622.png';
+import nuxtTemplateImgPath from '~/assets/images/Screenshot 2025-04-15 151218.png';
 import balesuqImgPath from '~/assets/images/Screenshot 2024-07-24 110923.png';
 import hahuJobsBotImgPath from '~/assets/images/Screenshot 2025-02-12 182905.png';
 import hahuJobsAdminConsoleImgPath from '~/assets/images/Screenshot2025-02-19071819.png';
-import DCMMEERPImgPath from '~/assets/images/Screenshot2025-02-12193725.png';
+import DCMMEERPImgPath from '~/assets/images/image_2025-04-15_16-10-24.png';
+import MULDERDASHBOARDImgPath from '~/assets/images/IMG_20250415_161911_554.jpg';
 const childRef = ref(null)
 const currentPageInParent = ref(0)
 const tab = useState('tab', () => 'Personal');
@@ -37,7 +38,7 @@ const projects = [
         image: hahuJobsAdminConsoleImgPath,
         link: 'https://staging.admin.hahujobs.io/app',
         type: 'Industrial',
-        description: 'I have participated in building of this web app alongside with other developers. The application is used by the admins for hahujobs owners to control the hahu.jobs site.',
+        description: 'I collaborated with a team of developers in building the admin web application for HahuJobs. This platform is designed to give HahuJobs owners and administrators full control over the content and functionality of the main hahu.jobs site. My primary responsibility was front-end development, where I focused on building reusable and maintainable components that were used consistently throughout the project to ensure a cohesive user experience and efficient development workflow.',
         techStack: ["Nuxt.js", "Nuxt UI", "Tailwind CSS", "Hasura", "PostgreSQL", "GoLang"]
     },
     {
@@ -52,8 +53,16 @@ const projects = [
         title: 'DCMME ERP - Web app',
         image: DCMMEERPImgPath,
         type: 'Client',
-        description: 'I have participated in building of this web app alongside with other developers. The application Automates and digitalize the working of DCMME company, like : auditting, recording document, analyzing Risk etc...',
+        description: "I worked collaboratively with a team of developers to build a comprehensive web application for DCMME Company. The purpose of this platform was to automate and digitize key operational processes such as auditing, document management, and risk analysis. My involvement included contributing to the development of features that streamline workflows, enhance data accessibility, and improve overall efficiency within the company's day-to-day operations.",
         techStack: ["Next.js", "Schadcn", "Tailwind CSS", "Java", "Springboot", "PostgreSQL", "Figma"]
+    },
+    {
+        title: 'Mulder Dashboard - Web app',
+        image: MULDERDASHBOARDImgPath,
+        link: 'https://mulder-admin-panel.vercel.app/',
+        type: 'Client',
+        description: "I independently designed and developed a mobile-responsive dashboard web application for a company called Mulder. The application was built to help them efficiently manage and track their stock, enabling users to add, edit, delete, and view inventory items with ease. The platform streamlined their inventory operations by providing a user-friendly interface and reliable functionality tailored to their business needs.",
+        techStack: ["Nuxt.js", "Hasura", "Tailwind CSS", "PostgreSQL", "Figma"]
     },
     {
         title: 'HaHuJobs Bot - Design',
@@ -69,14 +78,15 @@ const projects = [
         link: 'https://www.figma.com/proto/oOxiDJHku9bZEiKT2fkL8F/felega?node-id=196-1623&p=f&t=yY5ILnPHF6ezjdGM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=196%3A1623',
         type: 'Personal',
         description: ' An innovative tourism platform designed to enhance travel experiences. It allows users to post and discover unique locations (checkpoints) and connect them through engaging stories to create customized vacation itineraries (quests). With a focus on exploration and storytelling, Felega aims to make tourism more interactive, enjoyable, and community-driven.',
-        techStack: ["Figma"]
+        techStack: ["Figma", "Adobe XD", "Adobe Photoshop"]
     },
     {
         title: 'Nuxt Template - Documentation',
         image: nuxtTemplateImgPath,
+        link: 'https://nuxt-component-documentation.vercel.app/',
         type: 'Industrial',
-        description: 'As the UI/UX Designer for the Minab Nuxt.js TypeScript Template Documentation, I crafted an intuitive and visually cohesive interface to help developers navigate and understand reusable Nuxt components and TypeScript integration. I designed a clean, structured layout with a left-side navigation menu for quick access and a responsive, scrollable content area for seamless reading. Using consistent typography, clear visual hierarchy, and interactive elements, I enhanced both usability and aesthetics, ensuring an efficient and engaging developer experience.',
-        techStack: ["Nuxt.js", "Figma", "TypeScript", "tailwind", "Vue.js"]
+        description: 'As the lead designer and front-end developer for the Minab Nuxt.js TypeScript Template Documentation, I was responsible for both designing and building a clean, intuitive interface that enables developers to easily explore reusable Nuxt components and understand TypeScript integration. I created a structured layout featuring a left-side navigation menu and a responsive, scrollable content area to ensure seamless reading. This documentation was part of a broader initiative—our self-driven project to convert existing JavaScript components to TypeScript, build a CLI tool, and deliver a complete starter toolkit, aimed at improving development efficiency and onboarding.',
+        techStack: ["Nuxt.js", "Figma", "TypeScript", "tailwind", "HeadlessUI", "Vue.js"]
     },
 ];
 

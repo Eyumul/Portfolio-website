@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="lg:hidden flex bg-black flex-col min-h-screen pb-8 w-full">
-            <div class="fixed flex flex-col max-w-[390px] z-50 transition-all duration-500 ease-in-out shadow-2xl bg-black shadow-gray-600 h-full px-[5px] sm:px-[15px] md:px-[25px]" :class="collapsed ? '-translate-x-full' :'translate-x-0'">
-                <div class="flex pt-[15px] items-center justify-between">
+        <div class="lg:hidden flex bg-black  flex-col min-h-screen pb-8 w-full">
+            <div class="fixed z-50 overflow-auto flex flex-col max-w-[390px] z-50 transition-all duration-500 ease-in-out shadow-2xl bg-black shadow-gray-600 h-full px-[16px] md:px-[24px]" :class="collapsed ? '-translate-x-full' :'translate-x-0'">
+                <div class="flex sticky top-0 bg-black z-50 pt-[15px] items-center justify-between">
                     <button @click="collapsed = !collapsed">
                         <Icon name="ph:x" class="text-3xl text-silver-70 hover:text-green-2"/>
                     </button>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col ml-[64px] mt-[64px] gap-2">
+                <div class="grid grid-cols-3 mt-[64px] mb-8 w-fit self-center gap-8">
                     <social v-for="social in socials" :key="social.iconName" :IconName="social.iconName" :SocialLink="social.link" />
                 </div>
                 <div class="flex flex-wrap pr-[5px] items-center mt-auto mb-[64px] ml-[64px] text-blue-1 gap-4">
@@ -26,7 +26,7 @@
                     <p class="text-b1">:)</p>
                 </div>
             </div>
-            <div class="flex items-center pt-[15px] px-[5px] sm:px-[15px] md:px-[25px] justify-between">
+            <div class="flex fixed z-40 bg-black pb-4 w-full items-center pt-[15px] px-[16px] md:px-[24px] justify-between">
                 <button @click="collapsed = !collapsed" :class="collapsed ? '' : 'invisible'">
                     <Icon name="solar:hamburger-menu-linear" class="text-4xl text-silver-70 hover:text-green-2"/>
                 </button>
@@ -35,25 +35,25 @@
                     <p class="text-[14px] xl:text-[16px] body-one">Resume</p>
                 </a>
             </div>
-            <div>
+            <div class="pt-[57px]">
                 <slot/>
             </div>
         </div>
-        <div class="hidden lg:flex bg-black cursor-custom text-white h-screen justify-between gap-[24px] xl:gap-[48px]">
+        <div class="hidden lg:flex bg-black cursor-custom text-white h-full justify-between gap-[24px] xl:gap-[48px]">
             <div class="flex flex-col w-full">
                 <div class="flex hover:scale-110 duration-500 hover:text-green-2 absolute left-[48px] top-[48px] items-center text-blue-1 gap-4">
                     <p class="text-b4 italic">A little bit of design, a little bit of code, all me.</p>
                     <p class="text-b1">:)</p>
                 </div>
                 <slot/>
-                <div class="flex justify-center items-center gap-[100px] absolute w-full bottom-[48px]">
+                <div class="flex justify-center items-center gap-[100px] fixed bg-black w-full bottom-0 pb-[48px] pt-[12px]">
                     <pageLink :class="[currentpath == button.path ? 'text-green-2' : 'text-silver-70']" v-for="button in buttons" :key="button.Title" :buttonIcon="button.iconName" :buttonTitle="button.Title" :buttonPath="button.path" />
                 </div>
             </div>
-            <div class="h-full max-w-[224px] flex relative self-end pt-[120px] pb-[48px]">
+            <div class="h-full max-w-[224px] flex fixed relative self-end pt-[120px] pb-[48px]">
                 <div class="h-full mr-[24px] flex flex-col items-center">
                     <div class="w-[7px] h-[1px] bg-blue-4"></div>
-                    <div class="w-[1px] h-full bg-blue-4"></div>
+                    <div class="w-[1px] h-[740px] bg-blue-4"></div>
                     <div class="w-[7px] h-[1px] bg-blue-4"></div>
                 </div>
                 <a href="/documents/My_Resume_V3.pdf" target="_blank" class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">

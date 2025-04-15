@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full flex justify-center md:w-[80%]">
-        <div class="hidden md:flex border-[1px] hover:bg-blue-4 hover:drop-shadow-lg cursor-pointer transition-colors duration-500 ease-in-out border-blue-4 gap-[48px] xl:gap-[80px] 2xl:gap-[116px] px-[24px] py-[24px] 2xl:py-[48px] max-w-[1216px] rounded-[8px] group">
+    <a :href="achievementImage" target="_blank" class="w-full flex justify-center md:w-[80%]"> 
+        <div class="hidden md:flex border-[1px] hover:bg-blue-4 hover:drop-shadow-lg cursor-custom-pointer transition-colors duration-500 ease-in-out border-blue-4 gap-[48px] xl:gap-[80px] 2xl:gap-[116px] px-[24px] py-[24px] 2xl:py-[48px] max-w-[1216px] rounded-[8px] group">
             <div class="flex justify-center items-center">
                 <img :src="achievementImage" alt="certificate" class="max-w-[240px] w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out"/>
             </div>
@@ -13,7 +13,7 @@
                 <p class="text-b2 xl:text-b1 text-blue-1 group-hover:text-white transition-colors duration-500 ease-in-out body-one">{{ achievementDescription }}</p>
             </div>
         </div>
-        <div class="md:hidden max-w-[600px] mx-[24px] h-full">
+        <div class="md:hidden max-w-[360px] mx-[24px] h-full">
             <RotatingBox>
                 <template #front>
                     <div class="flex flex-col items-center text-blue-1 gap-[16px]">
@@ -30,7 +30,7 @@
                 </template>
             </RotatingBox>
         </div>
-    </div>
+    </a>
 </template>
 
 <script setup>

@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col justify-center lg:justify-start lg:mt-[120px] h-[calc(100vh-198px)] ml-0 md:ml-[48px]">
+    <div class="flex flex-col justify-center lg:justify-start lg:mt-[120px] h-[calc(100vh-198px)] md:h-fit ml-0 md:ml-[48px]">
         <div class="flex h-fit pl-0 md:pl-[48px] 2xl:pl-[80px] justify-center md:justify-between items-center">
-            <div class="absolute bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
+            <div class="absolute z-30 w-full md:w-fit bg-black md:bg-transparent justify-center pt-8 bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
                 <Pagination ref="childRef" :iteratingData="experiences"/>
             </div>
             <div class="w-full flex flex-col gap-[64px] mx-[24px] sm:mx-[120px] lg:mr-0 justify-center items-center">

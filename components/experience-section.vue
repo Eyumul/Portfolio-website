@@ -24,17 +24,17 @@
         <div class="md:hidden max-w-[600px] h-full">
             <RotatingBox>
                 <template #front>
-                    <div class="flex flex-col items-center text-blue-1 gap-[16px] p-4">
+                    <div class="flex flex-col max-h-[240px] items-center text-blue-1 gap-[16px] p-4">
                         <div class="h-[160px] flex items-center">
-                            <img :src="companyImage" alt="company_picture" class="w-[372px]"/>
+                            <img :src="companyImage" alt="company_picture" class="w-[240px]"/>
                         </div>
-                        <p class="text-h2 text-center xl:text-h1 header-one">{{ position }}</p>
                         <p class="text-b1 xl:text-h3 text-green-2 header-three">{{ companyName }}</p>
+                        <p class="text-b1 text-transparent bg-clip-text bg-gradient-to-r to-blue-2 from-green-2 text-center xl:text-h1 header-one">{{ position }}</p>
                         <p class="text-b2 xl:text-b1 body-one">{{ duration }}</p>
                     </div>
                 </template>
                 <template #back>
-                    <div class="flex flex-col items-center text-blue-1 gap-[16px]">
+                    <div class="flex flex-col max-h-[240px] items-center text-blue-1 gap-[16px]">
                         <ul class="text-b2 xl:text-b1 text-center body-one list-disc p-4 max-h-[300px] overflow-y-auto">
                             <li v-for="description in descriptions" :key="description">{{ description }}</li>
                         </ul>

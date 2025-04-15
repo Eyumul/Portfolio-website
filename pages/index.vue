@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div v-else-if="tab == 'Achievement'" Class="flex flex-col h-[calc(100vh-120px)] justify-center lg:justify-start lg:mt-[120px] ml-0 md:ml-[48px]">
+        <div v-else-if="tab == 'Achievement'" Class="flex flex-col h-[calc(100vh-120px)] md:h-fit justify-center lg:justify-start lg:mt-[120px] ml-0 md:ml-[48px]">
             <div v-if="isDesktop" class="flex h-fit md:pl-[48px] 2xl:pl-[80px] justify-center md:justify-between items-center">
                 <div class="absolute bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
                     <Pagination ref="childRef" :iteratingData="achievements.slice(0, achievements.length-1)"/>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div v-if="!isDesktop" class="flex h-fit justify-center items-center">
-                <div class="absolute bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
+                <div class="absolute z-40 w-full md:w-fit bg-black md:bg-transparent justify-center pt-8 bottom-0 md:top-0 h-fit md:h-screen flex pb-[36px] md:pb-0 self-center items-end md:items-center">
                     <Pagination ref="childRef" :iteratingData="achievements"/>
                 </div>
                 <div class="w-full flex flex-col gap-[64px] justify-center items-center">
@@ -85,7 +85,7 @@ onBeforeUnmount(() => {
   window.removeEventListener("resize", updateScreenSize);
 });
 
-const techStacks = ["Nuxt.js", "React.js", "Vue.js", "Next.js", "Tailwind CSS", "Arduino", "NI Multisim", "Proteus Design Suite", "Assembly language", "C", "C++", "Python", "Javascript", "HTML", "CSS", "Java", "Figma", "Adobe XD"]
+const techStacks = ["Nuxt.js", "React.js", "Vue.js", "Next.js", "Tailwind CSS", "Arduino", "NI Multisim", "Proteus Design Suite", "Assembly language", "C", "C++", "Python", "Javascript", "HTML", "CSS", "Java", "Figma", "Adobe XD", "Adobe Photoshop", "Schadcn"]
 const tab = useState('tab', () => 'About me');
 const achievements = [
     {
@@ -107,7 +107,7 @@ const achievements = [
         title:"HULT prize participation Certificate",
         date:"Jan 26 - 2024",
         organization:"Hult International Business School ",
-        description:"Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm"
+        description:"Awarded a participation certificate for developing an educational platform as part of Team Juvinary during the Hult Prize 2024 OnCampus Program."
     }
     
 ]
