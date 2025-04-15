@@ -124,6 +124,10 @@ const socials = [
     }
 ]
 
+useHead({
+  title: 'Eyuel M. Deribe'
+})
+
 const updateTab = () => {
   for (let button of buttons) {
     if (button.path === currentpath.value) {
