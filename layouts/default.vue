@@ -103,6 +103,10 @@ const buttons = [
 ]
 const socials = [
     {
+        iconName: "simple-icons:upwork",
+        link: "https://www.upwork.com/freelancers/~012fbbabdf428e3f63?mp_source=share"
+    },
+    {
         iconName: "cib:gmail",
         link: "mailto:eyuelmulugeta60@gmail.com"
     },
