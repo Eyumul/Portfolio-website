@@ -9,7 +9,7 @@
                     alt="profile_pic"
                 />
             </div>
-            <div class="flex flex-col p-6 pt-0 bg-blue-5 rounded-[10px] max-w-[859px] w-[100%] gap-4 h-[480px] md:h-[600px] overflow-y-auto">
+            <div class="flex flex-col p-6 pt-0 bg-blue-5 rounded-[10px] max-w-[859px] w-[100%] gap-4 h-[480px] md:h-[610px] overflow-y-auto">
                 <div class="flex flex-col pt-6 gap-4 sticky top-0 bg-blue-5 pb-4">
                     <p class="text-blue-1 uppercase text-h2 xl:text-h1 header-one">eyuel mulugeta</p>
                     <div class="flex flex-wrap gap-6 text-bl xl:text-h3 header-three">
@@ -27,7 +27,7 @@
                         </span>
                     </div>
                 </div>
-                <p class="text-blue-1 text-b2 xl:text-b1 text-justify body-one">Dedicated Electrical Engineering student passionate about innovation and technology. Experienced in designing functional prototypes, such as IoT solutions, automated systems, and energy-efficient devices, aimed at solving practical challenges. Self-taught in UI/UX design and frontend development, skilled in tools like Figma and frameworks such as Vue, Nuxt, and TailwindCSS to create seamless web and mobile experiences. Combining engineering principles with design expertise, I focus on developing user-centered, efficient, and impactful solutions. Committed to continuous learning, I aim to contribute to meaningful projects that advance technology and address real-world needs.</p>
+                <p class="text-blue-1 text-b2 xl:text-b1 text-justify body-one">Electrical Engineering graduate passionate about innovation and technology. Experienced in modernizing traditional workflows through digital solutions, including building responsive websites for businesses. Skilled in designing functional prototypes—from IoT systems to energy-efficient devices—addressing real-world challenges. With industry experience in UI/UX design and frontend development, I specialize in tools like Figma and frameworks such as Vue, Nuxt, and TailwindCSS to deliver seamless digital experiences. I’m also deeply interested in machine learning and AI, blending engineering insight with design thinking to build efficient, user-centered products. Committed to continuous learning, I aim to contribute to impactful, tech-driven solutions.</p>
                 <p  class="text-blue-1 text-b2 xl:text-b1 body-one">The following are technology I have been working with:</p>
                 <div class="flex flex-wrap gap-y-[16px] gap-x-[24px]">
                     <badge v-for="techStack in techStacks" :key="techStack" :identifier="techStack"/>
@@ -60,6 +60,7 @@
 import hackatomImgPath from '~/assets/images/hackatom_award.jpg';
 import strideImgPath from '~/assets/images/StrideAwardCertificate.png';
 import hultImgPath from '~/assets/images/hultprize_award.jpg';
+import alxImgPath from '~/assets/images/Hospitality_hackathon_2025_Certeficate.jpg';
 const childRef = ref(null)
 const currentPageInParent = ref(0)
 watch(() => childRef.value?.currentPage, (newVal) => {
@@ -94,6 +95,13 @@ const achievements = [
         date:"May 26 - 2024",
         organization:"Ministry Of Innovation And Technology (Ethiopia)",
         description:"Won 1st Place at the STRIDE Ethiopia Expo 2024 Hackathon for creating an innovative AI-driven solution to  transform Ethiopian tourism marketing."
+    },
+    {
+        image: alxImgPath,
+        title:"The Hospitality Hackathon 2025",
+        date:"Apr 13 - 2025",
+        organization:"ALX Ethiopia",
+        description:"Received a Certificate of Achievement for contributing innovative tech solutions at a Hospitality Hackathon."
     },
     {
         image: hackatomImgPath,

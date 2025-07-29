@@ -30,7 +30,7 @@
                 <button @click="collapsed = !collapsed" :class="collapsed ? '' : 'invisible'">
                     <Icon name="solar:hamburger-menu-linear" class="text-4xl text-silver-70 hover:text-green-2"/>
                 </button>
-                <a href="/documents/My_Resume_V3.pdf" target="_blank" class="flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
+                <a href="/documents/Eyuel_Mulugeta_Deribe.pdf" target="_blank" class="flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
                     <icon name="solar:document-text-linear" class="text-lg xl:text-xl"/>
                     <p class="text-[14px] xl:text-[16px] body-one">Resume</p>
                 </a>
@@ -56,7 +56,7 @@
                     <div class="w-[1px] h-[740px] bg-blue-4"></div>
                     <div class="w-[7px] h-[1px] bg-blue-4"></div>
                 </div>
-                <a href="/documents/My_Resume_V3.pdf" target="_blank" class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
+                <a href="/documents/Eyuel_Mulugeta_Deribe.pdf" target="_blank" class="absolute -left-[58px] top-[48px] flex items-center border-2 border-silver-70 text-silver-70 transition-colors duration-500 ease-in-out hover:border-green-2 hover:text-green-2 cursor-custom-pointer rounded-[5px] px-[12px] py-[2px] gap-[8px]">
                     <icon name="solar:document-text-linear" class="text-lg xl:text-xl"/>
                     <p class="text-[14px] xl:text-[16px] body-one">Resume</p>
                 </a>
