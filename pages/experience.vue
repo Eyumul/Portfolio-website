@@ -27,7 +27,7 @@ const tab = useState('tab', () => 'Full Time');
 const experiences = [
     {
         companyImage: boa,
-        position: 'IT Automation & Observability Engineer',
+        position: 'IT Operation Engineer',
         companyName: 'Bank of Abyssinia',
         duration: 'August 2025 - present',
         descriptions: [
