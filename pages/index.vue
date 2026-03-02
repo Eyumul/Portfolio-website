@@ -86,7 +86,7 @@ onBeforeUnmount(() => {
   window.removeEventListener("resize", updateScreenSize);
 });
 
-const techStacks = ["Nuxt.js", "React.js", "Vue.js", "Next.js", "Tailwind CSS", "Arduino", "NI Multisim", "Proteus Design Suite", "Assembly language", "C", "C++", "Python", "Javascript", "HTML", "CSS", "Java", "Figma", "Adobe XD", "Adobe Photoshop", "Schadcn"]
+const techStacks = ["TensorFlow", "PyTorch", "Pandas", "LangChain", "Nuxt.js", "React.js", "Vue.js", "Next.js", "Tailwind CSS", "Arduino", "NI Multisim", "Proteus Design Suite", "Assembly language", "C", "C++", "Python", "Javascript", "HTML", "CSS", "Java", "Figma", "Adobe XD", "Adobe Photoshop", "Schadcn"]
 const tab = useState('tab', () => 'About me');
 const achievements = [
     {
