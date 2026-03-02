@@ -12,6 +12,7 @@
 </template>
 
 <script setup>
+import boa from '~/assets/images/boa-logo.png';
 import minab from '~/assets/images/minab_logo_full_big_darkmood.png';
 import hahujobs from '~/assets/images/hahujobs.svg';
 import studypool from '~/assets/images/studypool.png';
@@ -25,10 +26,22 @@ watch(() => childRef.value?.currentPage, (newVal) => {
 const tab = useState('tab', () => 'Full Time');
 const experiences = [
     {
+        companyImage: boa,
+        position: 'IT Automation & Observability Engineer',
+        companyName: 'Bank of Abyssinia',
+        duration: 'August 2025 - present',
+        descriptions: [
+            'Developed custom automation scripts to streamline manual banking workflows and execute complex web scraping for data aggregation.',
+            'Implemented Grafana, Prometheus, and Zabbix stacks to establish real-time system observability and visualize critical performance metrics.',
+            'Engineered intelligent alerting workflows to proactively detect anomalies, significantly reducing incident response times and downtime.'
+        ],
+        companyLink: 'https://www.bankofabyssinia.com/'
+    },
+    {
         companyImage: minab,
         position: 'Frontend Developer',
         companyName: 'Minab IT Soutions',
-        duration: 'July 2024 - present',
+        duration: 'July 2024 - January 2025',
         descriptions: [
             'Developed and deployed 10+ responsive web pages using Nuxt, Vue, and TailwindCSS, ensuring cross-browser  compatibility and a seamless user experience.',
             'Created reusable components, such as navigation bars and date pickers, streamlining development workflows and  reducing project timelines by 25%.'
