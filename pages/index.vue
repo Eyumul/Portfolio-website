@@ -15,15 +15,15 @@
                     <div class="flex flex-wrap gap-6 text-bl xl:text-h3 header-three">
                         <span class="flex gap-2">
                             <p class="text-blue-1">|</p>
-                            <p class="text-green-2">Frontend Developer</p>
+                            <p class="text-green-2">Engineer</p>
                         </span>
                         <span class="flex gap-2">
                             <p class="text-blue-1">|</p>
-                            <p class="text-green-2">UI / UX Designer</p>
+                            <p class="text-green-2">Software Architect</p>
                         </span>
                         <span class="flex gap-2">
                             <p class="text-blue-1">|</p>
-                            <p class="text-green-2">Electrical and Computer Engineer</p>
+                            <p class="text-green-2">AI Solutions Innovator</p>
                         </span>
                     </div>
                 </div>
@@ -97,13 +97,6 @@ const achievements = [
         description:"Won 1st Place at the STRIDE Ethiopia Expo 2024 Hackathon for creating an innovative AI-driven solution to  transform Ethiopian tourism marketing."
     },
     {
-        image: alxImgPath,
-        title:"The Hospitality Hackathon 2025",
-        date:"Apr 13 - 2025",
-        organization:"ALX Ethiopia",
-        description:"Received a Certificate of Achievement for contributing innovative tech solutions at a Hospitality Hackathon."
-    },
-    {
         image: hackatomImgPath,
         title:"HACKATOM ETHIOPIA 2024",
         date:"May 15 - 2024",
@@ -116,6 +109,13 @@ const achievements = [
         date:"Jan 26 - 2024",
         organization:"Hult International Business School ",
         description:"Awarded a participation certificate for developing an educational platform as part of Team Juvinary during the Hult Prize 2024 OnCampus Program."
+    },
+    {
+        image: alxImgPath,
+        title:"The Hospitality Hackathon 2025",
+        date:"Apr 13 - 2025",
+        organization:"ALX Ethiopia",
+        description:"Received a Certificate of Achievement for contributing innovative tech solutions at a Hospitality Hackathon."
     }
     
 ]

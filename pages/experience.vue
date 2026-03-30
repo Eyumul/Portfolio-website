@@ -27,7 +27,7 @@ const tab = useState('tab', () => 'Full Time');
 const experiences = [
     {
         companyImage: boa,
-        position: 'IT Operation Engineer',
+        position: 'IT Automation & Observability Engineer',
         companyName: 'Bank of Abyssinia',
         duration: 'August 2025 - present',
         descriptions: [
@@ -39,9 +39,9 @@ const experiences = [
     },
     {
         companyImage: minab,
-        position: 'Frontend Developer',
+        position: 'Software Developer',
         companyName: 'Minab IT Soutions',
-        duration: 'July 2024 - January 2025',
+        duration: 'April 2024 - January 2025',
         descriptions: [
             'Developed and deployed 10+ responsive web pages using Nuxt, Vue, and TailwindCSS, ensuring cross-browser  compatibility and a seamless user experience.',
             'Created reusable components, such as navigation bars and date pickers, streamlining development workflows and  reducing project timelines by 25%.'
